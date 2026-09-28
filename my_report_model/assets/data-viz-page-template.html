@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>数据可视化分析页面标题</title>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Microsoft YaHei","微软雅黑",sans-serif;background:#f5f6f8;color:#1a1a2e;line-height:1.6}
+.header{background:linear-gradient(135deg,#1A2B4A 0%,#2d4a6f 100%);color:#fff;padding:48px 40px 36px}
+.header h1{font-size:30px;font-weight:700;margin-bottom:8px}
+.header p{font-size:15px;color:#a8b8d0;max-width:700px}
+.header .meta{margin-top:16px;font-size:12px;color:#7a8ba8}
+.container{max-width:1200px;margin:0 auto;padding:32px 24px 60px}
+.kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:32px}
+.kpi-card{background:#fff;border-radius:10px;padding:20px 22px;box-shadow:0 2px 8px rgba(0,0,0,0.06);border-left:4px solid #1A2B4A}
+.kpi-card .label{font-size:12px;color:#888;margin-bottom:6px}
+.kpi-card .value{font-size:28px;font-weight:700;color:#1A2B4A}
+.kpi-card .value .unit{font-size:14px;font-weight:400;color:#666;margin-left:2px}
+.kpi-card .sub{font-size:11px;color:#999;margin-top:4px}
+.kpi-card.highlight{border-left-color:#c0392b}
+.kpi-card.highlight .value{color:#c0392b}
+.chart-section{background:#fff;border-radius:10px;padding:24px 28px;margin-bottom:24px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+.chart-section h2{font-size:17px;font-weight:700;color:#1A2B4A;margin-bottom:4px}
+.chart-section .desc{font-size:13px;color:#888;margin-bottom:16px}
+.chart-box{width:100%;height:380px}
+.chart-box.tall{height:440px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.two-col .chart-section{margin-bottom:0}
+.insight{background:#f0f4fa;border-radius:8px;padding:14px 18px;margin-top:16px;font-size:13px;color:#3a4a6a;border-left:3px solid #1A2B4A}
+.insight b{color:#1A2B4A}
+.footer{max-width:1200px;margin:0 auto;padding:32px 24px 60px;font-size:12px;color:#aaa;line-height:1.8;text-align:left}
+@media(max-width:768px){.kpi-row{grid-template-columns:repeat(2,1fr)}.two-col{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>页面主标题（替换）</h1>
+  <p>副标题/核心论点（替换）</p>
+  <div class="meta">数据周期：XXX | 数据来源：XXX | 生成时间：XXX</div>
+</div>
+<div class="container">
+  <!-- KPI指标卡（4个） -->
+  <div class="kpi-row">
+    <div class="kpi-card"><div class="label">指标1</div><div class="value">00<span class="unit">单位</span></div><div class="sub">说明</div></div>
+    <div class="kpi-card highlight"><div class="label">指标2</div><div class="value">00<span class="unit">%</span></div><div class="sub">说明</div></div>
+    <div class="kpi-card"><div class="label">指标3</div><div class="value">0<span class="unit">款</span></div><div class="sub">说明</div></div>
+    <div class="kpi-card highlight"><div class="label">指标4</div><div class="value">0–0<span class="unit">万/年</span></div><div class="sub">说明</div></div>
+  </div>
+  <!-- 图表区域：复制 .chart-section 块，替换 id 和配置 -->
+  <div class="chart-section">
+    <h2>图表标题（替换）</h2>
+    <div class="desc">图表说明（替换）</div>
+    <div id="chart1" class="chart-box tall"></div>
+    <div class="insight"><b>关键发现：</b>替换为实际结论</div>
+  </div>
+</div>
+<div class="footer">数据来源：XXX | 部分数据为基于公开信息的推算值</div>
+<script>
+var navy='#1A2B4A',navyLight='#3d5a80',gray='#BABFC9',red='#c0392b';
+// 为每个图表初始化：var c1=echarts.init(document.getElementById('chart1')); c1.setOption({...});
+// 页面底部添加 resize 监听：window.addEventListener('resize',function(){[c1].forEach(function(c){c.resize()})});
+</script>
+</body>
+</html>
