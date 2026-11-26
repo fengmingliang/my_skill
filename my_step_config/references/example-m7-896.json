@@ -1,0 +1,95 @@
+{
+  "title": "问界 M7（896 线）版型阶梯图",
+  "subtitle": "",
+  "source": "数据来源：鸿蒙智行官网 问界 M7 参数配置页（896 线双光路图像级激光雷达） https://hima.auto/wenjie/m7-new/configuration/",
+  "groups": [
+    {
+      "energy": "EVR",
+      "label": "增程式混动",
+      "trims": [
+        {
+          "name": "Pro+ 四驱版",
+          "drive": "四驱",
+          "price": 279800,
+          "six_price": 299800,
+          "price_text": "¥279,800",
+          "adds": [
+            {"mark": "solid", "text": "电池 37→53.4kWh（磷酸铁锂→三元锂），纯电 208→327km"},
+            {"mark": "solid", "text": "四驱 → 后驱两驱"},
+            {"mark": "solid", "text": "闭式双腔空悬 + 车高电动调节"},
+            {"mark": "solid", "text": "ADS 5 高阶版；896 线双光路雷达 + 固态雷达"},
+            {"mark": "hollow", "text": "高阶智驾包（eAES、车位到车位）"}
+          ]
+        },
+        {
+          "name": "Max 长续航版",
+          "drive": "两驱",
+          "price": 309800,
+          "six_price": 329800,
+          "price_text": "¥309,800",
+          "adds": [
+            {"mark": "solid", "text": "两驱 → 双电机四驱（前 165kW）"},
+            {"mark": "solid", "text": "零百 8.2s → 5.1s"}
+          ]
+        },
+        {
+          "name": "Max 四驱版",
+          "drive": "四驱",
+          "price": 329800,
+          "six_price": 349800,
+          "price_text": "¥329,800",
+          "adds": [
+            {"mark": "solid", "text": "W-HUD → 68 英寸 AR-HUD"},
+            {"mark": "solid", "text": "后排娱乐屏 + 流媒体后视镜（标配）"},
+            {"mark": "solid", "text": "电动方向盘 + 主驾零重力座椅"}
+          ]
+        },
+        {
+          "name": "Ultra 四驱版",
+          "drive": "四驱",
+          "price": 349800,
+          "six_price": 369800,
+          "price_text": "¥349,800",
+          "adds": []
+        }
+      ]
+    },
+    {
+      "energy": "EV",
+      "label": "纯电",
+      "trims": [
+        {
+          "name": "Max 长续航版",
+          "drive": "两驱",
+          "price": 329800,
+          "six_price": 349800,
+          "price_text": "¥329,800",
+          "adds": [
+            {"mark": "solid", "text": "两驱 → 双电机四驱（前 160kW）"},
+            {"mark": "solid", "text": "零百 7.8s → 4.7s；纯电 710→660km"}
+          ]
+        },
+        {
+          "name": "Max 四驱版",
+          "drive": "四驱",
+          "price": 349800,
+          "six_price": 369800,
+          "price_text": "¥349,800",
+          "adds": [
+            {"mark": "solid", "text": "W-HUD → 68 英寸 AR-HUD"},
+            {"mark": "solid", "text": "后排娱乐屏 + 流媒体后视镜（标配）"},
+            {"mark": "solid", "text": "电动方向盘 + 主驾零重力座椅"}
+          ]
+        },
+        {
+          "name": "Ultra 四驱版",
+          "drive": "四驱",
+          "price": 369800,
+          "six_price": 389800,
+          "price_text": "¥369,800",
+          "adds": []
+        }
+      ]
+    }
+  ]
+}
